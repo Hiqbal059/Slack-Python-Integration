@@ -1,14 +1,5 @@
-# Slack-Python-Integration
+from slack_sdk.webhook import WebhookClient
 
-# Install Package
-```pip install slack-sdk```
-
-# Import Package
-```from slack_sdk.webhook import WebhookClient```
-
-# Post message to slack
-
-```
 def post_to_slack():
         webhook = WebhookClient('Slack Channel Webhook')
         response = webhook.send(
@@ -24,6 +15,3 @@ def post_to_slack():
             ]
         )
         return response
-```
-
-
